@@ -1,0 +1,16 @@
+# unifi config file
+
+base_url: https://unifi.home:8443
+site: default
+accept_invalid_certs: true
+client_macs:
+#  - 40:4e:36:8d:99:43   # curt pixel2
+  - f8:2d:7c:16:da:46	# owen-iphone
+  - e4:2b:34:06:b9:86	# ethan-iphone
+  - b8:ae:6e:41:34:5a	# ethan-3ds
+  - 78:88:6d:d2:61:8b	# owen-mitty-ipad
+  - b0:35:b5:9e:da:7f	# alex-iphone
+  - 68:9a:87:06:41:6f	# amz-echo-dot-01
+  - 1c:12:b0:0d:59:4f	# amz-echo-dot-02
+  - b8:78:26:39:81:02	# nintendo-switch-01
+  - 00:5b:94:d1:b9:ac	# ethan-mitty-ipad
