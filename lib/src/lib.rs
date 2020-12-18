@@ -29,6 +29,7 @@ pub struct UnifiConfig {
     pub client_macs: Vec<String>,
 }
 
+#[derive(Debug)]
 pub enum StationCommand {
     BlockStation,
     UnblockStation,
@@ -183,6 +184,7 @@ pub fn station_command(command: StationCommand, config: &UnifiConfig) -> Result<
         let json_station_command = serde_json::to_string(&station_command).unwrap();
         log::debug!("  station_command: {:?}", json_station_command);
 
+        log::info!("{:?}: {}", command, mac);
         let request = make_request(&client, &station_uri, &json_station_command);
         send_request(request)?;
     }
